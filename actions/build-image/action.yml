@@ -97,6 +97,8 @@ outputs:
 
 runs:
   using: composite
+  permissions:
+    packages: write
   steps:
     - name: Login to container registry
       if: inputs.push == 'true'
